@@ -26,10 +26,6 @@ export default {
 h1 {
   font-size: 3rem;
 }
-.container {
-  max-width: 87.5rem;
-  margin-inline: auto;
-}
 .main-header {
   background-color: #3730a3;
   color: #eef2ff;
@@ -51,7 +47,7 @@ h1 {
 }
 .hero-header > .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 .hero-header-text {
   align-self: center;

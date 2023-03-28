@@ -1,14 +1,17 @@
 <template>
   <app-header />
+  <app-search-panel />
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppSearchPanel from './components/AppSearchPanel.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
+    AppSearchPanel,
   },
 };
 </script>
@@ -42,6 +45,10 @@ img, picture, svg, canvas {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+}
+
+.container {
+  max-width: 87.5rem;
+  margin-inline: auto;
 }
 </style>
